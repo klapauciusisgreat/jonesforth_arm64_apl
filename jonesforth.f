@@ -165,7 +165,7 @@ SS0 SS !                                                        / Initialize SS 
 ∇ THROW ↑ { R ( ↑ R0 8- < ∥ ↑ @ ' MARKER 8+ = { 8+ R! >R SPOP ↓ R> EXIT } 8+ ) ↓ ." Uncaught throw" CR QUIT } ∇
 ∇ ABORT 1 ¯ THROW ∇
 
-∇ TRACE R ( ↑ R0 8- < ∥ ↑ @ ↑ H ! U. CR 8+ ) ↓ ∇ / Print addresses currently on return stack (no attempt to decompile them) /
+∇ TRACE R ( ↑ R0 8- < ∥ ↑ @ U. CR 8+ ) ↓ ∇ / Print addresses currently on return stack (no attempt to decompile them) /
 
 / Delimited continuations - see continuations.f /
 ∇ RCOMP H DOCOL , >R ( 2↑ ≤ ∥ ↑ @ ,LIT ' >R , 8- ) 2↓ R> ' EXIT , ∇             / aa→x Compile word pushing addresses to return stack /
